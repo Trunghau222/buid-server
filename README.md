@@ -51,7 +51,7 @@ Theo mặc định, bất cứ khi nào bạn gỡ mạng Docker xuống, dữ l
 2. Trong dịch vụ mysql trong tệp `docker-compose.yml` của bạn, hãy thêm các dòng sau:
 
 ```
-khối lượng:
+mysql:
    - ./mysql:/var/lib/mysql
 ```
 
