@@ -3,6 +3,10 @@ FROM php:8-fpm-alpine
 ARG UID
 ARG GID
 
+RUN apk add --no-cache libzip-dev \
+    && docker-php-ext-configure zip \
+    && docker-php-ext-install zip
+
 ENV UID=${UID}
 ENV GID=${GID}
 
